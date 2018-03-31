@@ -1,0 +1,29 @@
+<!--pages/username/game.wxml-->
+<view class='container'>
+  <view class='topBox'>
+    <view class='splitBoxRight'>
+      <text>计时:</text>
+      <text>{{min}}</text>
+      <text>分</text>
+      <text>{{sec}}</text>
+      <text>秒</text>
+    </view>
+    <view class='splitBoxLeft'>
+      <text>{{total}}</text>
+      <text>/</text>
+      <text class='green'>{{right}}</text>
+      <text>/</text>
+      <text class='red'>{{wrong}}</text>
+    </view>
+  </view>
+  <view class='calcBox paddingTop20'>
+    <text class='calcFont'>{{firstNum}}</text>
+    <text class='calcFont'>{{operator}}</text>
+    <text class='calcFont'>{{secondNum}}</text>
+    <text class='calcFont'>=</text>
+    <input class='calcFont' id='resultInput' type='idcard' bindinput="resultInput" maxlength="3" value="{{result}}" focus="{{focus}}"/>
+  </view>
+  <view class='paddingTop20'>
+    <button class='nextSubject paddingTop20' size='normal' bindtap="nextSubject">下一题</button>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/username/username.wxml-->
+<view class='container'>
+  <view class='body'>
+    <input class='username' placeholder="起个好听的名字" bindinput="username" auto-focus/>
+  </view>
+  <view class='buttons'>
+    <button bindtap="ok"> 确认 </button>
+    <button bindtap='back'> 返回 </button>
+  </view>
+</view>

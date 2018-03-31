@@ -1,0 +1,18 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class='body'>
+    <picker bindchange="bindPickerChange" value="{{userIndex}}" range="{{users}}">
+      <view class="picker">小盆友：{{users[userIndex]}}</view>
+    </picker>
+  </view>
+  <view class='buttons'>
+    <button bindtap="regist"> 建个昵称 </button>
+    <button bindtap="startgame"> 开始游戏 </button>
+  </view>
+  <view class='buttons'>
+    <button bindtap="viewScore"> 看成绩 </button>
+    <button bindtap="viewRanking"> 使用说明 </button>
+  </view>
+  
+  
+</view>

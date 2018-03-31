@@ -1,0 +1,24 @@
+<!--pages/index/help.wxml-->
+<div>
+<text class='title'>写在前面：</text>
+<text>\n</text>
+<text class='block'>本来准备做在线排名的，所以做了多用户模式，后来才发现微信小程序的后台服务器要做备案，比较麻烦，所以现在先就只做了离线版，主要功能是孩子数学计算练习出题的功能</text>
+<text>\n</text>
+<text>\n</text>
+<text class='title'>第一步：</text>
+<text>\n</text>
+<text class='block'>先给孩子建立一个昵称吧，每一次做题的成绩和细节都会记录在这个昵称下面，可以让孩子自己挑战自己的最好成绩</text>
+<text>\n</text>
+<text>\n</text>
+<text class='title'>关于出题权重控制：</text>
+<text>\n</text>
+<text class='block'>权重是用于控制出题难度，比如孩子现在的水平已经不需要做简单的10以内加减法，可以将十以内加减法的权重设置成0，而100以内加减法又没达到，只需要修改相应权重即可，想要某种题目出现很多，可以将某种类型的权重值设置更大些，则改种题目出现的可能就会大很多</text>
+<text>\n</text>
+<text>\n</text>
+<text class='title'>下一步开发计划：</text>
+<text>\n</text>
+<text class='block'>1、我准备将这个程序再重构一下，需要更容易增加题型</text>
+<text>\n</text>
+<text class='block'>2、我准备将出题设计成按照孩子的能力进度自动变化，而不是通过设置权重来控制，孩子的能力通过完成的某种类型题目的实际情况来评估（比如，速度，正确度）</text>
+<text>\n</text>
+</div>

@@ -1,0 +1,12 @@
+<!--pages/game/subjectList.wxml-->
+<!--pages/game/score.wxml-->
+<view class="container">
+  <view class='userName'><text>{{user}}</text></view>
+  <view class='subjectArea paddingTop50'>
+    <view class='subjectItem paddingTop5' wx:for="{{subjectList}}">
+      <text>第{{index + 1}}题：{{item.firstNum}}{{item.operator}}{{item.secondNum}}={{item.result}}</text>
+      <text class="{{item.isRight}}">{{item.isRight?'正确':'错误'}}</text>
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,10 @@
+<!--pages/game/score.wxml-->
+<view class="container">
+  <view class='userName'><text>{{user}}</text></view>
+  <view class='scoreArea paddingTop50'>
+    <view class='scoreItem paddingTop5' wx:for="{{scoreList}}">
+      <navigator url="subjectList?user={{user}}&roundNum={{index}}" class="navigator-hover">第{{index + 1}}次</navigator><text>共{{item.total}}题，正确{{item.right}}，错误{{item.wrong}},共耗时{{item.timer}}秒</text>
+    </view>
+  </view>
+  
+</view>

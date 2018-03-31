@@ -1,0 +1,31 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+} 
+.body{
+  display: flex;
+  padding: 0 0 400rpx 0;
+}
+.buttons{
+  display: flex;
+}
+.paddingTop100{
+  padding-top: 100px
+}
+.paddingTop50{
+  padding-top: 50px
+}
+.paddingTop20{
+  padding-top: 20px
+}
+.paddingTop5{
+  padding-top: 5px
+}
+input{
+  border:1rpx solid black
+}

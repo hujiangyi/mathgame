@@ -1,0 +1,48 @@
+<view class='container'>
+  <view class='topBox'>
+      <text class='title'>设置</text>
+      <text class='note'>修改权重可以修改某类题目出现的频率</text>
+  </view>
+  <view class='settingBox paddingTop20'>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>题目数：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="targetNumber" value="{{targetNumber}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>十以内加法权重：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="additionWeight" value="{{additionWeight}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>十以内减法权重：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="subtractionWeight" value="{{subtractionWeight}}" /></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>进位加法权重：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="addWithCarryWeight" value="{{addWithCarryWeight}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>退位减法权重：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="abdicationSubtractionWeight" value="{{abdicationSubtractionWeight}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>100以内加法（简单）：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="addition100SimpleWeight" value="{{addition100SimpleWeight}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>100以内加法（复杂）：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="addition100ComplexWeight" value="{{addition100ComplexWeight}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>100以内减法（简单）：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="subtraction100SimpleWeight" value="{{subtraction100SimpleWeight}}"/></view>
+    </view>
+    <view class='settingItem paddingTop5'>
+      <view class='settingTitle'><text>100以内减法（复杂）：</text></view>
+      <view class='settingValue'><input type='idcard' bindinput="subtraction100ComplexWeight" value="{{subtraction100ComplexWeight}}"/></view>
+    </view>
+  </view>
+  <view class='paddingTop20'>
+    <button class='startGame' size='normal' bindtap="startGame">开始</button>
+  </view>
+</view>
+

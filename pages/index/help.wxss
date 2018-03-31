@@ -1,0 +1,4 @@
+/* pages/index/help.wxss */
+.title{
+  font-size: 2rem
+}
