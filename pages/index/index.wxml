@@ -1,16 +1,24 @@
 <!--pages/index/index.wxml-->
 <view class="container">
   <view class='body'>
-    <picker bindchange="bindPickerChange" value="{{userIndex}}" range="{{users}}">
-      <view class="picker">小盆友：{{users[userIndex]}}</view>
-    </picker>
+    <view class='picker'>
+      <text>小盆友：</text>
+      <picker bindchange="bindPickerChange" value="{{userIndex}}" range="{{users}}">
+        <view src='picker'><text>{{users[userIndex]}}</text></view>
+      </picker>
+    </view>
+    
+    <view class='curLevel {{isHide}}'>
+      <navigator url="../game/setting?user={{users[userIndex]}}&grade={{grade}}" class="navigator-hover">当前级别:{{grade}}级</navigator><image src='../../image/level{{level}}.png' class='imgLevel'></image>
+    </view>
+    <view class='levelmsg {{isHide}}'><text>你可以做的更好哦</text><text>下一个目标：</text><text>{{levelmsg}}</text></view>
   </view>
   <view class='buttons'>
     <button bindtap="regist"> 建个昵称 </button>
     <button bindtap="startgame"> 开始游戏 </button>
   </view>
   <view class='buttons'>
-    <button bindtap="viewScore"> 看成绩 </button>
+    <button bindtap="viewScore"> 看成就 </button>
     <button bindtap="viewRanking"> 使用说明 </button>
   </view>
   

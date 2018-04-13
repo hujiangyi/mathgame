@@ -10,15 +10,20 @@
 <text class='block'>先给孩子建立一个昵称吧，每一次做题的成绩和细节都会记录在这个昵称下面，可以让孩子自己挑战自己的最好成绩</text>
 <text>\n</text>
 <text>\n</text>
-<text class='title'>关于出题权重控制：</text>
+<text class='title'>关于成就：</text>
 <text>\n</text>
-<text class='block'>权重是用于控制出题难度，比如孩子现在的水平已经不需要做简单的10以内加减法，可以将十以内加减法的权重设置成0，而100以内加减法又没达到，只需要修改相应权重即可，想要某种题目出现很多，可以将某种类型的权重值设置更大些，则改种题目出现的可能就会大很多</text>
+<text class='block'>每个等级都代表一种题型，而每个题型有三个成就，在全部做对的情况下，标准时间内完成所有的题目则可以获得对应成就</text>
+<text>\n</text>
+<text class='block'>我将看成绩放到了看成就的里面，考虑的是不想让孩子过多关注于量化的成绩，而是应该更多关注于自我超越</text>
 <text>\n</text>
 <text>\n</text>
-<text class='title'>下一步开发计划：</text>
+<text class='title'>联系作者：jay</text>
 <text>\n</text>
-<text class='block'>1、我准备将这个程序再重构一下，需要更容易增加题型</text>
+<text class='block'>如果你有什么好的想法可以联系我</text>
 <text>\n</text>
-<text class='block'>2、我准备将出题设计成按照孩子的能力进度自动变化，而不是通过设置权重来控制，孩子的能力通过完成的某种类型题目的实际情况来评估（比如，速度，正确度）</text>
+<text class='block'>邮箱：laolang@189.cn</text>
+<text>\n</text>
+<text class='block'>主页：https://hujiangyi.github.io/mydoc/</text>
+<text>\n</text>
 <text>\n</text>
 </div>

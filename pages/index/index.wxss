@@ -1,4 +1,6 @@
 .picker {
+  display: flex;
+  flex-direction: row;
   font-size:2rem;
 }
 .button-hover {
@@ -10,4 +12,44 @@
 }
 .buttons>button{
   width : 8rem
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.imgLevel{
+  width: 96px;
+  height: 32px;
+}
+.maxLevel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.curLevel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.levelmsg{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}
+.hide{
+  display:none;
+}
+.show{
+  display:flex;
+}
+.imgPicker{
+  width: 32px;
+  height: 32px;
 }

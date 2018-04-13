@@ -1,0 +1,14 @@
+<!--pages/game/setting.wxml-->
+<view class="container">
+  <view class='userName'><text>{{user}}</text></view>
+  <view class='body'>
+    <text>你想挑战哪个级别：</text>
+    <picker bindchange="bindPickerChange" value="{{grade - 1}}" range="{{gradeList}}">
+      <view class="picker">{{gradeList[grade - 1]}}</view>
+    </picker>
+  </view>
+  <view class='buttons'>
+    <button bindtap="ok"> 确认 </button>
+    <button bindtap='back'> 返回 </button>
+  </view>
+</view>

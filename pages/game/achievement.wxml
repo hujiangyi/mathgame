@@ -1,0 +1,17 @@
+<!--pages/game/achievement.wxml-->
+<view class='body'>
+  <view class='userName'><text>{{user}}</text></view>
+  <view class='buttons'>
+    <button bindtap="viewScore"> 看成绩 </button>
+  </view>
+  <view class='block-body'>
+    <view class='block' wx:for="{{medalList}}">
+      <image src='../../image/medal.png' class='imgMedal'></image>
+      <text>{{item.desc}}</text>
+      <image src='../../image/level{{item.level}}.png' class='imgLevel'></image>
+    </view>
+  </view>
+  <view class='summary'>
+    {{summaryMsg}}
+  </view>
+</view>

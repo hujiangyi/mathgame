@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/game/param",
     "pages/username/username",
     "pages/game/game",
     "pages/game/score",
     "pages/game/subjectList",
     "pages/username/binding",
-    "pages/index/help"
+    "pages/index/help",
+    "pages/game/achievement",
+    "pages/game/setting"
   ],
   "window": {
     "backgroundTextStyle": "light",
