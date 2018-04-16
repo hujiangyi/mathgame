@@ -29,7 +29,8 @@ Page({
   ok : function() {
     var userParam = utils.getStorageSync(utils.getParamKey(this.data.user), { grade: 1, level: 0 }); 
     userParam.grade = this.data.grade
-    utils.setStorageSync(utils.getParamKey(this.data.user), userParam)
+    userParam.level = grademanager.getLevelInGrade(this.data.user, this.data.grade)
+    utils.setStorageSync(utils.getParamKey(this.data.user, userParam.grade), userParam)
     wx.navigateBack({ changed: true });
   },
   back: function () {

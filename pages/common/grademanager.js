@@ -95,7 +95,7 @@ var gradeLevelRecord = function (user, grade, level) {
   utils.setStorageSync(utils.getParamKey(user), userParam)
 };
 exports.gradeLevelRecord = gradeLevelRecord;
-var getLevelInGrade = function (user, grade, level) {
+var getLevelInGrade = function (user, grade) {
   var gradeLevelList = utils.getStorageListSync(utils.getGradeLevel(user), [])
   if (gradeLevelList.length > grade - 1 ) {
     if (gradeLevelList[grade - 1]) {

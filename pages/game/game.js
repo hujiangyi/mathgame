@@ -101,7 +101,7 @@ Page({
           success: function (res) {
             if (res.confirm) {
               var userParam = utils.getStorageSync(utils.getParamKey(d.user), { grade: d.grade, level: d.level });
-              var levelingrade = grademanager.getLevelInGrade(d.grade)
+              var levelingrade = grademanager.getLevelInGrade(d.user,d.grade)
               if (newlevel > levelingrade) {
                 levelingrade = newlevel
               }
@@ -110,7 +110,7 @@ Page({
             } else if (res.cancel) {
               var userParam = utils.getStorageSync(utils.getParamKey(d.user), { grade: d.grade, level: d.level });
               var newgrade = d.grade + 1
-              var levelingrade = grademanager.getLevelInGrade(newgrade)
+              var levelingrade = grademanager.getLevelInGrade(d.user,newgrade)
               userParam.grade = newgrade
               userParam.level = levelingrade
               utils.setStorageSync(utils.getParamKey(d.user), userParam)
@@ -129,7 +129,7 @@ Page({
               if (res.cancel) {
                 var userParam = utils.getStorageSync(utils.getParamKey(d.user), { grade: d.grade, level: d.level });
                 var newgrade = d.grade + 1
-                var levelingrade = grademanager.getLevelInGrade(newgrade)
+                var levelingrade = grademanager.getLevelInGrade(d.user,newgrade)
                 userParam.grade = newgrade
                 userParam.level = levelingrade
                 utils.setStorageSync(utils.getParamKey(d.user), userParam)
